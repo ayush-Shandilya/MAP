@@ -1,0 +1,394 @@
+html, body, #root,.wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  align-items: stretch;
+  text-transform: capitalize;
+  background-color: tomato;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.map {
+  background-color: tomato;
+ 
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+.mapboxgl-popup {
+  max-width: 0.1rem;
+}
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  
+}
+.mapboxgl-popup-content > h6{
+  
+  margin: 3px 7px;
+}
+.mapboxgl-popup-content > p{
+  margin: 0px;
+}
+/* .mapboxgl-popup-close-button {
+  border-radius: 0 3rem 0 0;
+} */
+/* markers on map */
+.marker-yellow {
+  background: #dbf227;
+  border-radius: 50%;
+  background-size: cover;
+  cursor: pointer;
+}
+.marker-green {
+  background: #127369;
+  border-radius: 50%;
+  background-size: cover;
+  border: 100%;
+  border-color: white;
+  cursor: pointer;
+}
+.marker-orange {
+  background: tomato;
+  border-radius: 50%;
+  background-size: cover;
+  border-color: white;
+  cursor: pointer;
+}
+.marker-red {
+  background: crimson;
+  border-radius: 50%;
+  background-size: cover;
+  cursor: pointer;
+}
+.marker-purple {
+  background: #6e038c;
+  border-radius: 50%;
+  background-size: cover;
+  cursor: pointer;
+}
+.marker-brown {
+  background: #731702;
+  border-radius: 50%;
+  background-size: cover;
+  cursor: pointer;
+}
+.marker-white {
+  background: white;
+  border-radius: 50%;
+  background-size: cover;
+
+  cursor: pointer;
+}
+.mapboxgl-marker {
+  width: 1rem;
+  height: 1rem;
+}
+.mapboxgl-marker:hover {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/* NavBar CSS */
+.nav {
+  background-color: #41404d;
+  font-size: 1.4rem;
+  height: 100%;
+  width: 20%;
+  box-shadow: -20px 0px 50px -30px inset;
+  /* max-width: 26rem;
+  min-width: 22.1rem; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-items: stretch; */
+}
+.h2 {
+  color: white;
+}
+.grey-text {
+  color: rgb(209, 209, 209);
+}
+.wish {
+  margin-top: -1rem;
+}
+/* .value {
+} */
+.nav-main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+}
+.row3{
+  text-align: center;
+}
+hr {
+  height: 0.2rem;
+  background: linear-gradient(
+    90deg,
+    #ff2400,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #2b1de8,
+    #dd00f3,
+    #ff2400,
+    #e3e81d,
+    #1de840,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3,
+    #2b1de8,
+    #2b1de8,
+    #1ddde8,
+    #1de840,
+    #e3e81d,
+    #ff2400,
+    #dd00f3,
+    #2b1de8,
+    #1ddde8,
+    #1de840,
+    #e3e81d,
+    #ff2400
+  );
+
+  border: 0rem;
+  background-size: 6000%;
+  width: 90%;
+  margin: 2rem;
+  align-self: center;
+  animation: rainbow 20s cubic-bezier(1, 1, 1, 1) infinite;
+}
+h1 {
+  text-align: center;
+  color: aliceblue;
+}
+select {
+  margin-top: 0.8rem;
+  color: rgb(228, 243, 214);
+  background-color: rgb(43, 43, 43);
+  border: 0;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 0.7rem 0.5rem;
+  width: 75%;
+}
+/* #city {
+  margin-top: 2rem;
+} */
+
+
+.color-unordered-list {
+  padding-left: 4.5rem;
+  line-height: 1.5rem;
+}
+li.color-li-el {
+  list-style: square;
+}
+li.color-li-el::marker {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+li.green-li-el::marker {
+  color: #127369;
+}
+li.yellow-li-el::marker {
+  color: yellow;
+}
+.red-li-el::marker {
+  color: crimson;
+}
+.purple-li-el::marker {
+  color: rgb(204, 6, 204);
+}
+.brown-li-el::marker {
+  color: rgb(104, 14, 14);
+}
+.orange-li-el::marker {
+  color: tomato;
+}
+.white-li-el::marker {
+  color: rgb(255, 255, 255);
+}
+.li-el {
+  list-style: none;
+}
+.lower-letters {
+  text-transform: lowercase;
+  margin-left: 0.3rem;
+}
+.c,
+.o,
+.l,
+.r,
+.d,
+.e {
+  display: inline-block;
+  transition: all 0.3s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 2);
+  text-shadow: 0.5rem 0.5rem 0.7rem rgb(0, 0, 0);
+}
+.c:hover {
+  color: rgb(255, 2, 2);
+  transform: scale(2);
+}
+.o:hover {
+  color: rgb(67, 220, 20);
+  transform: scale(2);
+}
+.l:hover {
+  color: rgb(17, 0, 255);
+  transform: scale(2);
+}
+.r:hover {
+  color: rgb(17, 0, 255);
+  transform: scale(2);
+}
+.d:hover {
+  color: rgb(255, 0, 0);
+  transform: scale(2);
+}
+.e:hover {
+  color: rgb(17, 0, 252);
+  transform: scale(2);
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+
+
+
+.ring
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:150px;
+  height:150px;
+  background:transparent;
+  border:3px solid #3c3c3c;
+  border-radius:50%;
+  text-align:center;
+  line-height:150px;
+  font-family:sans-serif;
+  font-size:20px;
+  color:#ECF0F1;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  text-shadow:0 0 10px #ECF0F1;
+  box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+.ring:before
+{
+  content:'';
+  position:absolute;
+  top:-3px;
+  left:-3px;
+  width:100%;
+  height:100%;
+  border:3px solid transparent;
+  border-top:3px solid #ECF0F1;
+  border-right:3px solid #ECF0F1;
+  border-radius:50%;
+  animation:animateC 2s linear infinite;
+}
+.span
+{
+  display:block;
+  position:absolute;
+  top:calc(50% - 2px);
+  left:50%;
+  width:50%;
+  height:4px;
+  background:transparent;
+  transform-origin:left;
+  animation:animate 2s linear infinite;
+}
+.span:before
+{
+  content:'';
+  position:absolute;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:#04acd6;
+  top:-6px;
+  right:-8px;
+  box-shadow:0 0 20px #42b9d6;
+}
+@keyframes animateC
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+@keyframes animate
+{
+  0%
+  {
+    transform:rotate(45deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}
+
+
+
+/* .nav {
+  position: relative;
+  border-color: #1ddde8;
+}
+
+.nav:before,
+.nav:after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 15px;
+}
+
+.nav:before {
+  box-shadow: -15px 0 15px -15px inset;
+  left: -15px;
+}
+
+.nav:after {
+  box-shadow: 15px 0 15px -15px inset;
+  right: -15px;
+} */
